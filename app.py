@@ -2,7 +2,7 @@
 import streamlit as st
 
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
-from langchain.chat_models.openai import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 
 st.set_page_config(page_title="UOB Multilingual Chatbot")
 st.header("Ask Me Anything")
@@ -11,8 +11,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
+api_key = os.getenv("API_KEY")
 
-chat = ChatOpenAI(temperature=0.5)
+chat = ChatOpenAI(api_key=api_key,temperature=0)
 
 if 'flowmessages' not in st.session_state:
     st.session_state['flowmessages']= [
