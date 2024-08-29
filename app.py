@@ -5,7 +5,7 @@ from langchain.schema import HumanMessage, SystemMessage, AIMessage
 from langchain_community.chat_models import ChatOpenAI
 
 st.set_page_config(page_title="UOB Multilingual Chatbot")
-st.header("Ask Me Anything")
+st.header("What You Want?")
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -28,11 +28,11 @@ def get_chat_model_response(question):
     return answer.content
 
 
-input = st.text_input("What is your question?", key = "input")
+input = st.text_input("Anything also can?", key = "input")
 response = get_chat_model_response(input)
 submit = st.button("Ask the question")
 
 
 if submit:
-    st.subheader("The Response is")
+    st.subheader("The answer to your stupid question is")
     st.write(response)
