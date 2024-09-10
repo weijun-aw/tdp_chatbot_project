@@ -29,6 +29,9 @@ def get_chat_model_response(question):
 
 
 input = st.text_input("Anything also can?", key = "input")
+# Try to manipulate the input befroe we generate response 
+
+# Include an api call to db to get certain response and showcase it as the answer
 response = get_chat_model_response(input)
 submit = st.button("Ask the question")
 
@@ -36,3 +39,6 @@ submit = st.button("Ask the question")
 if submit:
     st.subheader("The answer to your stupid question is")
     st.write(response)
+
+
+## Include certain type of response such as -> If enquiry not part of the UOB qns -> Just put as UOB's link or refer to a number etc
