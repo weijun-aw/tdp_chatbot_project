@@ -1,0 +1,246 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": ["Hello!", "Hi there, how can I help?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": ["Goodbye!", "See you later!", "Hope I was able to help you"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful"],
+      "responses": ["You're welcome!", "Anytime!", "Glad I could help!"]
+    },
+    {
+      "tag": "Credit Card",
+      "patterns": [
+        "What is a credit card?",
+        "How to apply for a credit card?",
+        "What are the benefits of a credit card?"
+      ],
+      "responses": [
+        "You can apply for a credit card online or at any UOB branch."
+      ]
+    },
+    {
+      "tag": "credit_card_activation",
+      "patterns": [
+        "How do I activate my credit card?",
+        "Credit card activation process",
+        "Activate UOB credit card",
+        "I want to activate my credit card",
+        "How can I start using my credit card?"
+      ],
+      "responses": [
+        "You can activate your credit card via our mobile app or by calling the customer service hotline.",
+        "Please log into the UOB app to activate your card instantly.",
+        "To activate, visit [UOB Credit Card Activation Link] or call us."
+      ]
+    },
+    {
+      "tag": "credit_card_limit",
+      "patterns": [
+        "What is my credit card limit?",
+        "How can I increase my credit limit?",
+        "What is the maximum credit limit for UOB cards?",
+        "Credit card limit inquiry",
+        "Can I check my credit limit?"
+      ],
+      "responses": [
+        "You can check your credit card limit via online banking or the mobile app.",
+        "To increase your credit limit, submit a request through our online portal.",
+        "Please visit [UOB Online Banking Link] to check your credit limit."
+      ]
+    },
+    {
+      "tag": "credit_card_fees",
+      "patterns": [
+        "What are the fees for UOB credit cards?",
+        "Annual fee for UOB cards",
+        "Credit card charges and fees",
+        "Do UOB cards have annual fees?",
+        "Fees for credit card usage"
+      ],
+      "responses": [
+        "Our credit cards may have annual fees, but some have waived fees for the first year.",
+        "Check the specific fees and charges for your card type on our website: [UOB Credit Card Fees Link].",
+        "You can view detailed fee information in the terms and conditions."
+      ]
+    },
+    {
+      "tag": "credit_card_lost",
+      "patterns": [
+        "I've lost my credit card",
+        "Report a lost credit card",
+        "What should I do if I lose my card?",
+        "I need to report a stolen credit card",
+        "Lost or stolen card process"
+      ],
+      "responses": [
+        "Immediately report your lost or stolen credit card via our hotline or mobile app.",
+        "You can block your card instantly through the UOB app or by calling us at [UOB Hotline].",
+        "Please report your lost card here: [UOB Report Lost Card Link]."
+      ]
+    },
+    {
+      "tag": "online_banking",
+      "patterns": [
+        "How do I access online banking?",
+        "Set up online banking",
+        "Can I access my account online?",
+        "UOB online banking login",
+        "Help with online banking setup"
+      ],
+      "responses": [
+        "You can access your account by visiting [UOB Online Banking Link] and logging in with your credentials.",
+        "Set up your online banking account by following the instructions at [UOB Online Banking Setup Link].",
+        "For help with setup, contact customer support or visit your nearest branch."
+      ]
+    },
+    {
+      "tag": "transaction_dispute",
+      "patterns": [
+        "I need to dispute a transaction",
+        "There is an error in my statement",
+        "How can I dispute a charge?",
+        "Incorrect transaction on my card",
+        "I want to report a wrong transaction"
+      ],
+      "responses": [
+        "You can dispute a transaction by filling out a form via our mobile app or online banking.",
+        "Please visit [UOB Transaction Dispute Link] to report the incorrect charge.",
+        "Contact our customer service for further assistance with transaction disputes."
+      ]
+    },
+    {
+      "tag": "branch_locator",
+      "patterns": [
+        "Where is the nearest UOB branch?",
+        "Find a UOB branch near me",
+        "Branch locations for UOB",
+        "Locate the nearest branch",
+        "Branch finder for UOB"
+      ],
+      "responses": [
+        "You can locate your nearest UOB branch using our online branch locator tool: [UOB Branch Locator Link].",
+        "Please visit our website for a list of all branches: [UOB Branch Locations Link].",
+        "Find the closest branch on our mobile app's branch locator feature."
+      ]
+    },
+    {
+      "tag": "atm_locator",
+      "patterns": [
+        "Where is the nearest UOB ATM?",
+        "Find a UOB ATM near me",
+        "ATM locations for UOB",
+        "Locate the nearest ATM",
+        "ATM finder for UOB"
+      ],
+      "responses": [
+        "You can find the nearest ATM using our online ATM locator: [UOB ATM Locator Link].",
+        "Please visit our website or mobile app to find nearby ATMs.",
+        "Use the UOB app for real-time ATM locations."
+      ]
+    },
+    {
+      "tag": "account_opening",
+      "patterns": [
+        "How do I open a UOB account?",
+        "Open a new account with UOB",
+        "Account opening process",
+        "Can I open a UOB account online?",
+        "How to start a UOB account?"
+      ],
+      "responses": [
+        "You can open an account online by visiting [UOB Account Opening Link] or at any UOB branch.",
+        "Please ensure you have the required documents ready for account opening.",
+        "Visit us in-branch or online for assistance with opening a new account."
+      ]
+    },
+    {
+      "tag": "balance_inquiry",
+      "patterns": [
+        "How can I check my account balance?",
+        "Account balance inquiry",
+        "Show me my balance",
+        "I want to know my balance",
+        "Check balance for my UOB account"
+      ],
+      "responses": [
+        "You can check your balance via the UOB mobile app or by logging into online banking.",
+        "Visit [UOB Online Banking Link] to view your account balance.",
+        "Your balance can also be viewed at any UOB ATM or branch."
+      ]
+    },
+    {
+      "tag": "loan_inquiry",
+      "patterns": [
+        "How can I apply for a loan?",
+        "UOB loan application",
+        "Loan eligibility for UOB",
+        "What are the loan options?",
+        "Tell me about UOB loans"
+      ],
+      "responses": [
+        "You can apply for a loan online or visit any branch to speak with a loan officer.",
+        "Visit [UOB Loan Information Link] to learn more about our loan products.",
+        "Check your eligibility and apply for a loan through our website or mobile app."
+      ]
+    },
+    {
+      "tag": "foreign_exchange",
+      "patterns": [
+        "What is the current exchange rate?",
+        "Foreign exchange rate inquiry",
+        "UOB exchange rates",
+        "Check forex rates at UOB",
+        "How do I get foreign currency?"
+      ],
+      "responses": [
+        "You can check the latest exchange rates on our website or mobile app: [UOB Forex Rates Link].",
+        "Visit any UOB branch for foreign currency exchange services.",
+        "For real-time rates, use the UOB online banking platform."
+      ]
+    },
+    {
+      "tag": "mobile_banking",
+      "patterns": [
+        "How do I download the UOB mobile app?",
+        "Help with mobile banking",
+        "Can I access my account through mobile?",
+        "Set up mobile banking",
+        "UOB mobile app download"
+      ],
+      "responses": [
+        "You can download the UOB mobile app from the App Store or Google Play.",
+        "Set up your mobile banking account by logging in with your online banking credentials.",
+        "For more details, visit [UOB Mobile Banking Link]."
+      ]
+    },
+    {
+      "tag": "change_pin",
+      "patterns": [
+        "How do I change my card PIN?",
+        "Change my credit card PIN",
+        "How can I reset my card PIN?",
+        "Help with PIN reset",
+        "Change UOB card PIN"
+      ],
+      "responses": [
+        "You can change your PIN through the UOB mobile app or by visiting a branch.",
+        "Log in to your account online to reset your card PIN.",
+        "Please visit [UOB PIN Change Link] for step-by-step instructions."
+      ]
+    }
+  ]
+}
