@@ -6,7 +6,7 @@ from sqlalchemy.exc import IntegrityError
 
 from database.database import get_db
 
-from ..users.crud import get_user_query_by_id, create_query
+from ..users.crud import get_user_query_by_id, create_query, model_test
 from ..users.schema import (
     User
 )
@@ -33,5 +33,12 @@ def get_user_query(id: int, db: Session = Depends(get_db)):
 async def create_response(user: User, db: Session = Depends(get_db)):
 
     new_user = create_query(db, user)
+
+    return new_user
+
+@user_router.post("/create_bryan_response/{id}", status_code=201 ,response_model=User)
+async def create_bryan_response(user: User, db: Session = Depends(get_db)):
+
+    new_user = model_test(db, user)
 
     return new_user

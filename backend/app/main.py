@@ -6,7 +6,7 @@ from database.database import Base, engine
 from database.seed_database import add_dummy_query_history
 from src.users import model 
 from src.users.router import user_router
-
+from src.algorithm import chat
 
 Base.metadata.create_all(bind=engine)
 
